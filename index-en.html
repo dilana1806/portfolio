@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel Quest</title>
+    <meta name="title" content="Web Developer Portfolio">
+    
+    <meta name="description" content="Portfolio of a web developer creating modern, fast and responsive websites using HTML, CSS and JavaScript. 
+    Clean code and high-quality frontend development.">
+    <meta name="keywords" content="web developer, frontend developer, portfolio web developer, responsive website design, HTML CSS JavaScript,
+    modern web development, freelance web developer, website creation, fast and clean websites, professional frontend services, UI/UX responsive layout">
+    <meta name="author" content="di.lana">
+
+    <!-- Open Graph / Facebook  -->
+    <!-- <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Мое портфолио">
+    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"> -->
+
+    <!-- Twitter -->
+    <!-- <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Мое портфолио">
+    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"> -->
+
+    <!-- Favicon perepisati puti src_icons_favicon!!!!!!!!!  -->
+<link rel="apple-touch-icon" sizes="57x57" href="/src/icons/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/src/icons/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/src/icons/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/src/icons/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/src/icons/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/src/icons/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/src/icons/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/src/icons/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/src/icons/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/src/icons/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/src/icons/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/src/icons/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/src/icons/favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+   
+</head>
+<body>
+   
+    <div class="menu active">
+        <div class="menu__block">
+            <div class="menu__close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 
+                    0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 
+                    0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 
+                    2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 
+                    0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 
+                    28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 
+                    27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 
+                    26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
+                </svg>
+            </div>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#about_me">ABOUT ME</a></li>
+                    <li class="menu__link"><a href="#experience">WORK EXPERIENCE</a></li>
+                    <li class="menu__link"><a href="#skills">MY SKILLS</a></li>
+                    <!-- <li class="menu__link"><a href="#portfolio">MY WORKS</a></li> -->
+                    <li class="menu__link"><a href="#contacts">CONTACTS</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu__social">
+                <a href="#">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0C4.475 0 0 4.36167 0 9.74107C0 14.0457 2.865 17.6962 6.8375 18.9832C7.3375 19.0749 7.52083 18.7734 7.52083 18.5148C7.52083 18.2835 7.5125 17.6706 7.50833 16.8585C4.72667 17.4459 4.14 15.5517 4.14 15.5517C3.685 14.4274 3.0275 14.1267 3.0275 14.1267C2.12167 13.5228 3.0975 13.5352 3.0975 13.5352C4.10167 13.603 4.62917 14.5389 4.62917 14.5389C5.52083 16.0283 6.97 15.5979 7.54167 15.3493C7.63167 14.719 7.88917 14.2903 8.175 14.0466C5.95417 13.8029 3.62 12.9652 3.62 9.23304C3.62 8.16988 4.0075 7.30085 4.64917 6.61934C4.53667 6.37317 4.19917 5.3827 4.73667 4.04116C4.73667 4.04116 5.57417 3.78012 7.48667 5.03988C8.28667 4.82345 9.13667 4.71606 9.98667 4.7111C10.8367 4.71606 11.6867 4.82345 12.4867 5.03988C14.3867 3.78012 15.2242 4.04116 15.2242 4.04116C15.7617 5.3827 15.4242 6.37317 15.3242 6.61934C15.9617 7.30085 16.3492 8.16988 16.3492 9.23304C16.3492 12.9752 14.0117 13.7987 11.7867 14.0383C12.1367 14.3307 12.4617 14.928 12.4617 15.8408C12.4617 17.1444 12.4492 18.1918 12.4492 18.5082C12.4492 18.7635 12.6242 19.0683 13.1367 18.9708C17.1375 17.692 20 14.0391 20 9.74107C20 4.36167 15.5225 0 10 0Z" fill="#212121"/>
+                    </svg>                        
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7495 0L6.24951 0C2.79826 0 -0.000488281 2.79875 -0.000488281 6.25L-0.000488281 13.75C-0.000488281 17.2013 2.79826 20 6.24951 20L13.7495 20C17.2008 20 19.9995 17.2013 19.9995 13.75L19.9995 6.25C19.9995 2.79875 17.2008 0 13.7495 0ZM18.1245 13.75C18.1245 16.1625 16.162 18.125 13.7495 18.125L6.24951 18.125C3.83701 18.125 1.87451 16.1625 1.87451 13.75L1.87451 6.25C1.87451 3.8375 3.83701 1.875 6.24951 1.875L13.7495 1.875C16.162 1.875 18.1245 3.8375 18.1245 6.25L18.1245 13.75Z" fill="black"/>
+                        <path d="M9.99951 5C7.23826 5 4.99951 7.23875 4.99951 10C4.99951 12.7613 7.23826 15 9.99951 15C12.7608 15 14.9995 12.7613 14.9995 10C14.9995 7.23875 12.7608 5 9.99951 5ZM9.99951 13.125C8.27701 13.125 6.87451 11.7225 6.87451 10C6.87451 8.27625 8.27701 6.875 9.99951 6.875C11.722 6.875 13.1245 8.27625 13.1245 10C13.1245 11.7225 11.722 13.125 9.99951 13.125Z" fill="black"/>
+                        <path d="M15.3745 5.29123C15.7425 5.29123 16.0408 4.99295 16.0408 4.62499C16.0408 4.25703 15.7425 3.95874 15.3745 3.95874C15.0065 3.95874 14.7083 4.25703 14.7083 4.62499C14.7083 4.99295 15.0065 5.29123 15.3745 5.29123Z" fill="black"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.0698 0L2.9292 0C1.3139 0 -0.000488281 1.31439 -0.000488281 2.92969L-0.000488281 17.0703C-0.000488281 18.6856 1.3139 20 2.9292 20L8.82764 20L8.82764 12.9297L6.48389 12.9297L6.48389 9.41406L8.82764 9.41406L8.82764 7.03125C8.82764 5.09262 10.4046 3.51563 12.3433 3.51563L15.8979 3.51563L15.8979 7.03125L12.3433 7.03125L12.3433 9.41406L15.8979 9.41406L15.312 12.9297L12.3433 12.9297L12.3433 20L17.0698 20C18.6851 20 19.9995 18.6856 19.9995 17.0703L19.9995 2.92969C19.9995 1.31439 18.6851 0 17.0698 0Z" fill="black"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="menu__overlay">
+
+        </div>
+    </div>
+
+    
+    <section class="promo">
+        <div class="hamburger">
+            <span></span>
+            <span class="long"></span>
+            <span></span>
+        </div>
+
+        <div class="lang-menu">
+            <nav>
+                <a class="menu-item" href="/index-ro.html"><img src="https://flagcdn.com/ro.svg" width="20" alt="romania"> </a>
+                <a class="menu-item" href="/index.html"><img src="https://flagcdn.com/ru.svg" width="20" alt="russia"> </a>
+                <a class="menu-item" href="/index-en.html"><img src="https://flagcdn.com/gb.svg" width="20" alt="england"> </a>
+                <a  href="/index-fr.html"><img src="https://flagcdn.com/fr.svg" width="20" alt="france"></a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="title title_fs16 promo__subtitle">My name is Svetlana.</div>
+            <h1 class="title title_fs48 promo__title">I am a web developer from Moldova.</h1>
+            <div class="promo__btns">
+                <a href="#skills" class="promo__link btn">My Skills</a>
+                <a href="#about_me" class="promo__link">About me</a>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="about" id="about_me">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__photo">
+                    <img src="/src/img/main_foto.jpg" alt="photo" class="about__photo_img">
+                </div>
+
+                    <div class="about__descr">
+                    <h2 class="title title_fs16b about__title">About me</h2>
+                        <div class="title title_fs36b about__subtitle">My name is Svetlana.</div>
+                        <div class="divider"></div>
+                        <p class="about__text">Hi! My name is Svetlana, and I’m an IT specialist with extensive 
+                        professional experience. Today, I’m developing my career in web development — creating 
+                        modern, functional, and visually clean websites that combine technical thinking with creative 
+                        design. In web development, I value aesthetics, accessibility, and precision. I strive to keep 
+                        learning and improving my skills.
+                        </p>
+                    </div>
+
+                    <div class="about__skills-item-1">
+                        <div class="about__skills-circle">
+                            <img class="img" src="/src/icons/about_me/web_development.svg" alt="web_dev">
+                        </div>
+                       <h2 class="skills__title">Web Development</h2>
+                       <p class="about__skills-text">I build modern websites that combine functionality, clean code, 
+                        and visual harmony. I work with HTML, CSS, JavaScript, and modern frameworks to create fast, 
+                        secure, and user-friendly solutions. For me, every project should not only look good but also 
+                        solve the client’s goals effectively and provide real value.</p>
+                    </div>
+
+                    <div class="about__skills-item-3">
+                        <div class="about__skills-circle">
+                            <img class="img" src="/src/icons/about_me/design.svg" alt="design">
+                        </div>
+                       <h2 class="skills__title">UI/UX Design</h2>
+                       <p class="about__skills-text">Every project I create follows the “mobile first” principle — 
+                        ensuring the website displays correctly on any screen size. I aim to deliver a consistent 
+                        and comfortable user experience on smartphones, tablets, and desktop computers. I use flexible 
+                        layouts, media queries, and modern CSS techniques to make sure the design remains aesthetic and 
+                        functional in any environment.</p>
+                    </div>
+         </div>
+
+        </div>
+    </section>
+
+
+    <section class="resume" id="experience">
+        <div class="container">
+            <h2 class="title title_fs16b resume__title">Experience</h2>
+            <div class="title title_fs36b resume__subtitle">How can i be useful</div>
+            <div class="divider"></div>
+
+            <div class="resume__wrapper">
+                <div class="resume__column">
+                    <h3 class="title title_fs20 resume__column-title">Education</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="/src/icons/experience/university.svg" alt="university">
+                                    </div>
+                                    <h4 class="title_fs14b">Faculty of Applied Mathematics, University</h4>
+                                    <div class="resume__item-location"> Dnepr Ukraine (1987-1992)</div>
+                                </div>
+                                <div class="resume__item-body">By education, I am an applied mathematician — 
+                                I graduated from the Faculty of Applied Mathematics, Department of Mathematical 
+                                Software for Computers. The logic, structured thinking, and attention to detail 
+                                developed during my studies help me greatly in programming.
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="/src/icons/experience/courses.svg" alt="udemy">
+                                    </div>
+                                    <h4 class="title_fs14b">UDEMY</h4>
+                                    <div class="resume__item-location">Web Development Courses</div>
+                                </div>
+                                <div class="resume__item-body">I recently completed web development courses covering HTML, 
+                                CSS, JavaScript, responsive design, and the basics of modern frameworks. I continue to grow 
+                                and improve in this field.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="resume__column">
+                    <h3 class="title title_fs20 resume__column-title">Work Experience</h3>
+                    <ul>
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="/src/icons/experience/designer.svg" alt="finsectia">
+                                    </div>
+                                    <h4 class="title_fs14b">Financial Department</h4>
+                                    <div class="resume__item-location">Moldova (1993-1999)</div>
+                                </div>
+                                <div class="resume__item-body">After graduating from university, I worked in 
+                                the financial department, where I developed a database-driven program for 
+                                calculating employee payments.
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="resume__item">
+                                <div class="resume__item-head">
+                                    <div class="resume__item-icon">
+                                        <img src="/src/icons/experience/developer.svg" alt="developer">
+                                    </div>
+                                    <h4 class="title_fs14b">Information Tehnology Department</h4>
+                                    <div class="resume__item-location"> BC Energbank SA (2001-2025)</div>
+                                </div>
+                                <div class="resume__item-body">The main part of my professional career was spent in the 
+                                technical support department of an IT division of a bank. This experience gave me a deep 
+                                understanding of IT infrastructure, user interaction, and technical processes, and taught 
+                                me to solve complex problems, find quick solutions, and understand user needs.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="title title_fs16b skills__titlle">Skills</h2>
+            <div class="title title_fs36 skills__subtitle">What I use in my work:</div>
+            <div class="divider"></div>
+
+            <div class="skills__items">
+                <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="/src/icons/skills/html5.svg" alt="html5">
+                    </div>
+                    <h3 class="title title_fs14b">HTML5</h3>
+                    <p>It builds the structure of your website or application, and version 5 allows me to create 
+                    a more SEO-optimized layout for your product.</p>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="/src/icons/skills/css3.svg" alt="css3">
+                    </div>
+                    <h3 class="title title_fs14b">CSS3</h3>
+                    <p>This styling language lets me create any look or design for your site or app. 
+                    The only limit is your imagination! </p>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="/src/icons/skills/js.svg" alt="java script">
+                    </div>
+                    <h3 class="title title_fs14b">Java Script</h3>
+                    <p>Brings everything to life: sliders, 
+                    popups, tooltips, tabs, server data fetching, and much more.</p>
+                </div>
+                <!-- <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="/src/icons/skills/jquery.svg" alt="Jquery">
+                    </div>
+                    <h3 class="title title_fs14b">Jquery</h3>
+                    <p>Helps accelerate development. I use it only when necessary, but I’m skilled in working with it.</p>
+                </div> -->
+                <!-- <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="/src/icons/skills/react.svg" alt="React">
+                    </div>
+                    <h3 class="title title_fs14b">React</h3>
+                    <p>A library for creating interactive web applications tailored to your goals.</p>
+                </div> -->
+                <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="/src/icons/skills/node.js.svg" alt="Node.js">
+                    </div>
+                    <h3 class="title title_fs14b">Node.js</h3>
+                    <p>A platform that powers the backend — the “brain” of your product that handles what users don’t see.</p>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__item-img">
+                        <img src="/src/icons/skills/sqlite.svg" alt="SQLite.db">
+                    </div>
+                    <h3 class="title title_fs14b">SQLite.db</h3>
+                    <p>A relational database that stores your website or app data efficiently.</p>
+                </div>
+            </div>
+
+            <div class="skills__ratings">
+                <div class="skills__ratings-item">
+                    <div class="title title_fs14b skills__ratings-title">Websiye Develop</div>
+                    <div class="skills__ratings-counter">100%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item">
+                    <div class="title title_fs14b skills__ratings-title">Data Management</div>
+                    <div class="skills__ratings-counter">90%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item">
+                    <div class="title title_fs14b skills__ratings-title">Design Creation</div>
+                    <div class="skills__ratings-counter">90%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="skills__ratings-item">
+                    <div class="title title_fs14b skills__ratings-title">Responsiveness</div>
+                    <div class="skills__ratings-counter">100%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div class="skills__ratings-item">
+                    <div class="title title_fs14b skills__ratings-title">Creativity</div>
+                    <div class="skills__ratings-counter">75%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="skills__ratings-item">
+                    <div class="title title_fs14b skills__ratings-title">Soft skills</div>
+                    <div class="skills__ratings-counter">95%</div>
+                    <div class="skills__ratings-line">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="title title_fs16b skills__titlle">Portfolio</h2>
+            <div class="title title_fs36 skills__subtitle">My Works</div>
+            <div class="divider"></div>
+
+            <div class="portfolio__wrapper">
+                <a href="#" class="portfolio__item">
+                    <img src="/src/img/works/uber.jpg" alt="uber">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="/src/img/works/pulse.jpg" alt="pulse">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="/src/img/works/bread.jpg" alt="test">
+                </a>
+                <a href="#" class="portfolio__item vertical">
+                    <img src="/src/img/works/plans.jpg" alt="test">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="/src/img/works/ipad.jpg" alt="test">
+                </a>
+                <a href="#" class="portfolio__item horizonal">
+                    <img src="/src/img/works/mac.jpg" alt="test">
+                </a>
+            </div>
+              
+        </div>
+    </section> -->
+
+
+    <section class="price" id="price">
+        <div class="container">
+            <h2 class="title title_fs16b skills__titlle">Price-List</h2>
+            <div class="divider"></div>
+    
+            <div class="price__wrapper">
+                <div class="price__item">
+                    <div class="price__type">Landing-page</div>
+                    <div class="price__count">from 450 €</div>
+                    <div class="price__descr">
+                        A one=page website for presenting services and goods...
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Bussiness card website</div>
+                    <div class="price__count">from 250 €</div>
+                    <div class="price__descr">
+                        Website for initial familiarization and contacts
+                    </div>
+                </div>
+                <!-- <div class="price__item">
+                    <div class="price__type">Корпоративный сайт</div>
+                    <div class="price__count">от 20000 руб.</div>
+                    <div class="price__descr">
+                        Сайт для вашего бизнеса или компании
+                    </div>
+                </div> -->
+                <!-- <div class="price__item">
+                    <div class="price__type">Android/IOS Приложение</div>
+                    <div class="price__count">от 25000 руб.</div>
+                    <div class="price__descr">
+                        Приложение для смартфона любой ОС
+                    </div>
+                </div> -->
+                <!-- <div class="price__item">
+                    <div class="price__type">Интернет-магазин</div>
+                    <div class="price__count">от 30000 руб.</div>
+                    <div class="price__descr">
+                        Инструмент для ваших продаж в сети
+                    </div>
+                </div> -->
+                <!-- <div class="price__item">
+                    <div class="price__type">Дизайн</div>
+                    <div class="price__count">Индивидуально</div>
+                    <div class="price__descr">
+                        Создам дизайн для вашего сайта/приложения...
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="/src/img/main_foto.jpg" alt="photo">
+                </div>
+                <div class="contacts__descr">
+                    <h2 class="title title_fs16b contacts__title">Contacts</h2>
+                    <div class="title title_fs36b contacts__subtitle">Get in touch with me</div>
+                    <div class="divider"></div>
+
+                    <div class="title title_fs14b contacts__text">
+                        Send me a message by clicking the link:
+                    </div>
+                    <div class="contacts__social">
+
+                        <a href="mailto:di.lana@outlook.com">di.lana@outlook.com</a>
+                        <!-- <a href="#" class="contacts__link">
+                            <img src="/src/icons/social/facebook_straight.svg" alt="facebook">
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <img src="/src/icons/social/telegram.svg" alt="telegram">
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <img src="/src/icons/social/instagram_straight.svg" alt="instagram">
+                        </a> -->
+                    </div>
+                    <!-- <div class="title title_fs14b contacts__text">
+                        or leave your details and I’ll contact you myself.:
+                    </div>
+
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Your Email</label>
+                        </div>
+
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text">Your Message</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Send Message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>I agree with <a href="/policy.html">the Privacy Policy.</a></span>
+                            </div>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <script type="module" src="/src/js/script.js"></script>
+    
+</body>
