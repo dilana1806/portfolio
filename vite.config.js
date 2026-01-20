@@ -9,6 +9,8 @@ export default defineConfig({
   // и нужно отдавать каждый HTML отдельно, без кеширования
   appType: "mpa",
 
+   base: "./",
+
   build: {
     rollupOptions: {
       input: {
